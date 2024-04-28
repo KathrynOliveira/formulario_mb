@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import './notification.scss';
+@import './loading.scss';
+
+$orange: #ff9100;
+$orange-light: #ff9900da;
+$white: #fff;
+$black: #000;
+$red: #ff0000;
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+span {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.w-100 {
+  width: 100%;
+
+  @media (max-width: 600px) {
+    width: auto;
+  }
+}
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+
+  &.btn-warning {
+    background-color: $orange;
+    color: $white;
+    margin-left: 5px;
+
+    &:hover {
+      background-color: $orange-light;
+    }
+  }
+
+  &.btn-border-warning {
+    border: 2px solid $orange;
+    background-color: $white;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: $orange-light;
+      color: $white;
+    }
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-danger {
+  color: $red;
+}
+
+.wrapper-home {
+  min-height: 100vh;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: $white;
+  width: 85%;
+  max-width: 400px;
+
+  @media (min-width: 600px) {
+    width: 400px;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      max-width: 300px;
+      align-items: center;
+    }
+  }
+}
+
+.textInput {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid $black;
+  border-radius: 5px;
+}
+
+.radioGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid $orange;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked {
+    background-color: $orange;
+  }
+
+  label {
+    margin-right: 20px;
+    cursor: pointer;
+
+    @media (max-width: 600px) {
+      margin-right: 0px;
+    }
+  }
+}
