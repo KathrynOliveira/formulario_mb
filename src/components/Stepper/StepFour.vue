@@ -19,7 +19,7 @@ export default {
       try {
         showLoading.value = true;
 
-        const response = await fetch("http://localhost:300/registration", {
+        const response = await fetch("http://localhost:3000/registration", {
           method: "POST",
           headers: {
             Accept: "application/json",
