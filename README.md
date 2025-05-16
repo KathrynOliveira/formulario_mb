@@ -1,43 +1,33 @@
-# Formulario mb
+# 🚀 Formulário em etapa
 
-Formulário em Vue.js 3 com composition API.
+Este projeto é um formulário multi-etapas desenvolvido com Vue 3 utilizando a Composition API. O objetivo é oferecer uma experiência de preenchimento simples e intuitiva, dividindo o processo em etapas claras e organizadas.
 
 ![step-1](public/images/step_1.PNG)
 
-## Requisitos
+## 💻 Tecnologias
 
-Antes de iniciar, certifique-se de ter os seguintes requisitos instalados em sua máquina:
+- **Vue**
+- **Composition API**
+- **SCSS**
+- **JavaScript**
+- **HTML**
 
--   **Node >= 18.14.2**
 
-## Passos para Execução
+## 🚀 Instalação
 
-Siga as etapas abaixo para configurar e executar o projeto:
+```bash
+# Clone o repositório
+git clone https://github.com/KathrynOliveira/formulario_mb.git
 
-1.  **Clone o repositório:**
+# Entre no diretório do repositório
+cd formulario_mb
 
-    ```bash
-    git clone https://github.com/KathrynOliveira/formulario_mb.git
-    cd nome-do-diretório
+# Instale as dependências
+npm install
+# ou
+yarn install
+```
 
-2. **Instalar dependencias**
+## 👨‍💻 Autora
 
-    ```sh
-    npm install
-    ```
-
-3. **Inicie o servidor de desenvolvimento vue:**
-
-    ```sh
-    npx vite --port=4000
-    ```
-
-4. **Inicie o servidor de desenvolvimento node express:**
-
-    ```sh
-    nodemon server.cjs
-    ```
-
-## Autora
-
-Kathryn Oliveira
+- [Kathryn Oliveira](https://github.com/KathrynOliveira)
